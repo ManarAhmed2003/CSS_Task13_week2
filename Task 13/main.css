@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+.assign1 div{
+    background-color: #eee;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+    border-right:10px solid #673ab7 ;
+    border-left:10px solid #f44336 ;
+}
+.assign1 div::before{
+    content: "";
+    width: 600px;
+    height: 10px;
+    background-image: linear-gradient(to right,
+     #f44336 20%,
+     #2196f3 20%, #2196f3 40%,
+     #4caf50 40%, #4caf50 60%,
+     #e91e63 60%, #e91e63 80%, 
+     #673ab7 80%, #673ab7 100%);
+     position: absolute;
+     top: -10px;
+    
+}
+.assign1 div::after{
+    content: "";
+    width: 600px;
+    height: 10px;
+    background-image: linear-gradient(to right,
+    #f44336 20%,
+     #2196f3 20%, #2196f3 40%,
+     #4caf50 40%, #4caf50 60%,
+     #e91e63 60%, #e91e63 80%, 
+     #673ab7 80%, #673ab7 100%);
+     position: absolute;
+     bottom: -10px;
+}
+.assign1 div::first-letter{
+    content: "";
+    color: #f44336;
+}
+.assign2 div{
+    position: relative;
+    width: 600px;
+    margin: 20px auto;
+}
+.assign2 div input{
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    border: none;
+    caret-color: red;
+}
+.assign2 div::after{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 5px;
+    background-image: linear-gradient(to right, #f44336 50%, #009688 50%, #009688 100%);
+    bottom: 0px;
+    left: 0px;
+}
+input:focus{
+    outline: none;
+}
